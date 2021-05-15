@@ -24,9 +24,53 @@ const switzerland = new Location({
         "Switzerland is a mountainous Central European country, home to numerous lakes, villages and the high peaks of the Alps. Its cities contain medieval quarters, with landmarks like capital Bern’s Zytglogge clock tower and Lucerne’s wooden chapel bridge. The country is also known for its ski resorts and hiking trails. Banking and finance are key industries, and Swiss watches and chocolate are world renowned.",
 });
 
+const london = new Location({
+    title: "London",
+    imgSrc: "https://lp-cms-production.imgix.net/2019-06/55425108.jpg",
+    description:
+        "London, city, capital of the United Kingdom. It is among the oldest of the world’s great cities—its history spanning nearly two millennia—and one of the most cosmopolitan. By far Britain’s largest metropolis, it is also the country’s economic, transportation, and cultural centre.",
+});
+
+const newYork = new Location({
+    title: "New York",
+    imgSrc: "https://cdn.getyourguide.com/img/location/5ffeb52eae59a.jpeg/88.jpg",
+    description:
+        "New York is the most ethnically diverse, religiously varied, commercially driven, famously congested, and, in the eyes of many, the most attractive urban centre in the country.",
+});
+
+const italy = new Location({
+    title: "Italy",
+    imgSrc: "https://www.fodors.com/wp-content/uploads/2019/03/20GorgeousSidetownsinItaly__HERO_shutterstock_688078159.jpg",
+    description:
+        "Italy, country of south-central Europe, occupying a peninsula that juts deep into the Mediterranean Sea. Italy comprises some of the most varied and scenic landscapes on Earth and is often described as a country shaped like a boot.",
+});
+
+const amsterdam = new Location({
+    title: "Amsterdam",
+    imgSrc: "https://www.telegraph.co.uk/content/dam/insurance/2016/04/06/amsterdam.jpg",
+    description:
+        "Amsterdam is the capital and the largest city in the Netherlands. The city is also the largest in the Netherlands in terms of population. Although Amsterdam is the capital, the government and parliament are in The Hague (the seat of government). Amsterdam is located in the province of Noord-Holland.",
+});
+
 switzerland.save((err) => {
     if (err) return console.error(err);
     console.log("Saved Switzerland");
+});
+london.save((err) => {
+    if (err) return console.error(err);
+    console.log("Saved London");
+});
+newYork.save((err) => {
+    if (err) return console.error(err);
+    console.log("Saved New York");
+});
+italy.save((err) => {
+    if (err) return console.error(err);
+    console.log("Saved Italy");
+});
+amsterdam.save((err) => {
+    if (err) return console.error(err);
+    console.log("Saved Amsterdam");
 });
 
 const app = express();
